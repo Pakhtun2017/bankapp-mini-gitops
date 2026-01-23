@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transaction-service
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: transaction
+        image: bankapp/transaction:latest
+        env:
+        - name: DB_TIMEOUT
+          value: "3000"
+
