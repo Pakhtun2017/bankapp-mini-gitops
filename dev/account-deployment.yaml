@@ -11,5 +11,5 @@ spec:
         image: bankapp/account:latest
         env:
         - name: ENABLE_AUDIT_LOGS
-          value: "false"
+          value: "true"
 
