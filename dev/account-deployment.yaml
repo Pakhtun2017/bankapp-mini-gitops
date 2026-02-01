@@ -5,11 +5,17 @@ metadata:
   namespace: bankapp-dev
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: account-service
   template:
+    metadata:
+      labels:
+        app: account-service
     spec:
       containers:
       - name: account
-        image: bankapp/account:latest
+        image: oolumee/account@sha256:PLACEHOLDER
         env:
         - name: ENABLE_AUDIT_LOGS
           value: "false"

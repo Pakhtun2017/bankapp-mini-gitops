@@ -5,11 +5,17 @@ metadata:
   namespace: bankapp-dev
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: transaction-service
   template:
+    metadata:
+      labels:
+        app: transaction-service
     spec:
       containers:
       - name: transaction
-        image: bankapp/transaction:latest
+        image: oolumee/transaction@sha256:PLACEHOLDER
         env:
         - name: DB_TIMEOUT
           value: "100"
