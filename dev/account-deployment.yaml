@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: account
-        image: oolumee/account@sha256:aca3c2b584a4098b93e739039ed70f5bb2e94e0fe438d49b96dcadcc6424a4c5
+        image: oolumee/account@sha256:5ab1c44074ab7d332efb8759dc1dc0bcf0a46c573cb02b7a949151bfce183ef7
         env:
         - name: ENABLE_AUDIT_LOGS
           value: "false"
