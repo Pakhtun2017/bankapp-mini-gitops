@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: transaction
-        image: bankapp/transaction:latest
+        image: oolumee/transaction@sha256:b3974b7ca43a5cef0dcc1e7b4c90549cac3e9ef1acb11c20bc0f7dc1783995e9
         env:
         - name: DB_TIMEOUT
           value: "3000"
