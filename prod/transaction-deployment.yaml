@@ -5,7 +5,13 @@ metadata:
   namespace: bankapp-prod
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: transaction-service
   template:
+    metadata:
+      labels:
+        app: transaction-service
     spec:
       containers:
       - name: transaction

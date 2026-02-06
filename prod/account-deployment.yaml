@@ -5,7 +5,13 @@ metadata:
   namespace: bankapp-prod
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: account-service
   template:
+    metadata:
+      labels:
+        app: account-service
     spec:
       containers:
       - name: account
@@ -13,4 +19,3 @@ spec:
         env:
         - name: ENABLE_AUDIT_LOGS
           value: "false"
-
