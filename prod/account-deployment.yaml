@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: account
-        image: bankapp/account:latest
+        image: oolumee/account@sha256:ef3539d97981c2032d66f2bd1950793e1fc648c9aa820e103ce2dc0870be620d
         env:
         - name: ENABLE_AUDIT_LOGS
           value: "false"
