@@ -20,4 +20,4 @@ spec:
         - name: DB_TIMEOUT
           value: "100"
         - name: ENABLE_TX_AUDIT
-          value: "false"
+          value: "true"
