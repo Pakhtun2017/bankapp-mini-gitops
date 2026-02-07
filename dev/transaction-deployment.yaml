@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: transaction
-        image: oolumee/transaction@sha256:e6f7bd56cd9f3b05d58e085cd82ff2a31d1f1a9d35c6e3b349bf3ba2281e3498
+        image: oolumee/transaction@sha256:049bde65c82ff558b8b115b16a638ff663ac157c2bb2191d78f5100899e1ec52
         env:
         - name: DB_TIMEOUT
           value: "100"
